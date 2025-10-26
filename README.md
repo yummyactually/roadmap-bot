@@ -9,7 +9,7 @@
 
 ### 1. Установка
 ```bash
-# Клонируйте или создайте папку проекта
+# Клонируйте папку проекта
 git clone https://github.com/yummyactually/roadmap-bot.git
 cd roadmap-bot
 ```
@@ -17,8 +17,8 @@ cd roadmap-bot
 ### 2. Настройка
 Отредактируйте `.env` и установите свои значения:
 
-```python
-# В файле config.py замените:
+```bash
+# В файле .env замените:
 BOT_TOKEN = ваш_токен_от_BotFather
 ADMIN_ID = ваш_telegram_id
 ```
