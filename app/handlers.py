@@ -2246,7 +2246,7 @@ async def export_users_json_callback(callback: CallbackQuery, session: AsyncSess
         await callback.message.answer_document(
             document=file,
             caption=f"📄 <b>Экспорт пользователей</b>\n\n"
-                   f"👥 Всего: <b>{len(users_data)}</b> (без ботов)\n"
+                   f"👥 Всего: <b>{len(users_data)}</b>\n"
                    f"📅 Дата: {datetime.now().strftime('%d.%m.%Y %H:%M')}",
             parse_mode="HTML"
         )
@@ -2285,7 +2285,7 @@ async def export_users_txt_callback(callback: CallbackQuery, session: AsyncSessi
         await callback.message.answer_document(
             document=file,
             caption=f"📝 <b>Экспорт ID пользователей</b>\n\n"
-                   f"👥 Всего: <b>{len(txt_lines)}</b> (без ботов)\n"
+                   f"👥 Всего: <b>{len(txt_lines)}</b>\n"
                    f"📅 Дата: {datetime.now().strftime('%d.%m.%Y %H:%M')}",
             parse_mode="HTML"
         )
