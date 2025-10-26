@@ -1,5 +1,7 @@
 services:
   roadmap-bot:
+    container_name: roadmap-bot
     build: .
     restart: always
     env_file: ".env"
+
